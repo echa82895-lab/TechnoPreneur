@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Kursus</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand text-white" href="user.html">
+                TechnoPreneur
+            </a>
+
+            <!-- Button Hamburger -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+
+                    <a class="nav-link text-white" href="user.html">
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link text-white" href="user.html">
+                        Daftar Sertifikasi
+                    </a>
+
+                    <a
+                        class="nav-link text-white"
+                        href="login.html"
+                        onclick="logout()">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Riwayat -->
+    <section class="bg-dua min-vh-100" id="riwayat">
+        <div class="container py-4">
+            <h2 class="mb-4">Riwayat Kursus</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="table-primary">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Sertifikasi</th>
+                        <th>Biaya</th>
+                        <th>Durasi</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody id="list">
+                    <!-- Data otomatis dari JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; UKK 2026 - Techno Preneur</p>
+            <p class="mb-0">SMK Dinamika Pembangunan 2 Jakarta</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/riwayat.js"></script>
+    <script src="js/logout.js"></script>
+
+</body>
+</html>

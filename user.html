@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lembaga Pelatih Dan Kursus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="dashboard.html">
+          Lembaga Pelatih Dan Kursus
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="index.html">Dasboard</a>
+            <a class="nav-link text-white" href="index.html">Daftar Sertifikasi</a>
+            <a class="nav-link text-white" href="riwayat.html">Riwayat</a>
+            <a class="nav-link text-white" href="login.html" onclick="logout()"
+              >Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-satu" id="profil">
+      <div class="container py-3">
+        <h2 class="text-start pt-3" id="welcome"></h2>
+        <p>
+          Hallo User!
+        </p>
+        <p>Welcome To My Future
+        </p>
+      </div>
+    </section>
+
+     <section id="daftar-sertifikasi" class="bg-dua py-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-3 my-3">
+        <div class="card h-100">
+          <img
+            src="assets/kursus/jwd.png"
+            class="card-img-top"
+            alt="Junior Website Developer"
+          >
+
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">
+              Junior Website Developer <br>
+              Harga: Rp2.500.000 <br>
+              Durasi: 60 JP
+            </p>
+
+            <button
+              class="btn btn-secondary mt-auto"
+              onclick="daftarKursus(
+                'Junior Website Developer',
+                2500000,
+                '60 JP'
+              )">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 2 -->
+      <div class="col-md-3 my-3">
+        <div class="card h-100">
+          <img
+            src="assets/kursus/jgd.png"
+            class="card-img-top"
+            alt="Junior Graphic Designer"
+          >
+
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">
+              Junior Graphic Designer <br>
+              Harga: Rp2.000.000 <br>
+              Durasi: 60 JP
+            </p>
+
+            <button
+              class="btn btn-secondary mt-auto"
+              onclick="daftarKursus(
+                'Junior Graphic Designer',
+                2000000,
+                '60 JP'
+              )">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- Card 3 -->
+      <div class="col-md-3 my-3">
+        <div class="card h-100">
+          <img
+            src="assets/kursus/jna.png"
+            class="card-img-top"
+            alt="Junior Network Administrator"
+          >
+
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">
+              Junior Network Administrator <br>
+              Harga: Rp2.500.000 <br>
+              Durasi: 60 JP
+            </p>
+
+            <button
+              class="btn btn-secondary mt-auto"
+              onclick="daftarKursus(
+                'Junior Network Administrator',
+                2500000,
+                '60 JP'
+              )">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 my-3">
+        <div class="card h-100">
+          <img
+            src="assets/kursus/jop.png"
+            class="card-img-top"
+            alt="Junior Office Operator"
+          >
+
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">
+              Junior Office Operator <br>
+              Harga: Rp1.500.000 <br>
+              Durasi: 60 JP
+            </p>
+
+            <button
+              class="btn btn-secondary mt-auto"
+              onclick="daftarKursus(
+                'Junior Office Operator',
+                1500000,
+                '60 JP'
+              )">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <footer class="bg-primary text-white py-4">
+    <div class="container text-center">
+        <p class="mb-1">&copy; ukk 2026 - Techno Preneur</p>
+        <p class="mb-0">SMK Dinamika Pembangunan 2 Jakarta</p>
+    </div>
+  </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/kursus.js"></script>
+  </body>
+</html>
